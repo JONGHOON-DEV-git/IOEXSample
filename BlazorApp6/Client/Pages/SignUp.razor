@@ -1,0 +1,47 @@
+﻿@page "/SignUp"
+@using BlazorApp6.Shared
+
+<div class="auth-container">
+    <div class="auth-form">
+        <h3 class="auth-title">Sign Up</h3>
+        <EditForm Model="registerModel" OnValidSubmit="HandleRegister">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="auth-field">
+                <label for="Email">Email:</label>
+                <InputText id="Email" class="auth-input" @bind-Value="registerModel.Email" />
+                <ValidationMessage For="@(() => registerModel.Email)" />
+            </div>
+            <div class="auth-field">
+                <label for="Password">Password:</label>
+                <InputText type="password" id="Password" class="auth-input" @bind-Value="registerModel.Password" @oninput="ValidatePassword" />
+            </div>
+            <div class="auth-field">
+                <label for="ConfirmPassword">Confirm Password:</label>
+                <InputText type="password" id="ConfirmPassword" class="auth-input" @bind-Value="registerModel.PasswordConfirm" @oninput="ValidatePassword" />
+                @if (!isPasswordConfirmed)
+                {
+                    <div class="text-danger">Passwords do not match.</div>
+                }
+            </div>
+            <button type="submit" class="auth-button" disabled="@(string.IsNullOrEmpty(registerModel.Email) || !isPasswordConfirmed)">Sign Up</button>
+        </EditForm>
+    </div>
+</div>
+
+
+@code {
+    private SignUpRequest registerModel = new ();
+    private bool isPasswordConfirmed = true;
+
+    private void ValidatePassword()
+    {
+        isPasswordConfirmed = registerModel.Password == registerModel.PasswordConfirm;
+    }
+
+    private void HandleRegister()
+    {
+        // 여기에 회원 가입 로직을 추가합니다.
+        Console.WriteLine($"User {registerModel.Email} is trying to register.");
+    }
+}
