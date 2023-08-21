@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoService.Server", "TodoService\Server\TodoService.Server.csproj", "{7F1689D6-70A2-4046-809F-1AA6B940DF3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoService.Client", "TodoService\Client\TodoService.Client.csproj", "{275600A1-219A-4A0C-9561-5B9933505407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoService.Shared", "TodoService\Shared\TodoService.Shared.csproj", "{6503B8A7-DE08-46AF-9E97-885A05CBBDA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F1689D6-70A2-4046-809F-1AA6B940DF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1689D6-70A2-4046-809F-1AA6B940DF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1689D6-70A2-4046-809F-1AA6B940DF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1689D6-70A2-4046-809F-1AA6B940DF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275600A1-219A-4A0C-9561-5B9933505407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275600A1-219A-4A0C-9561-5B9933505407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275600A1-219A-4A0C-9561-5B9933505407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275600A1-219A-4A0C-9561-5B9933505407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6503B8A7-DE08-46AF-9E97-885A05CBBDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6503B8A7-DE08-46AF-9E97-885A05CBBDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6503B8A7-DE08-46AF-9E97-885A05CBBDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6503B8A7-DE08-46AF-9E97-885A05CBBDA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
